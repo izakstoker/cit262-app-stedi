@@ -51,6 +51,9 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
              {/* <Text style={{fontSize:20, marginVertical:30, textAlign:'center', color:'#818181'}}>Or</Text> */}
 
             <TouchableOpacity
+        title="Press me"
+        color="#f194ff"
+        onPress={() => Alert.alert('Button with adjusted color pressed')}
                style={styles.sendButton}
               onPress={async ()=>{
                 console.log(phoneNumber+' Button was pressed')
